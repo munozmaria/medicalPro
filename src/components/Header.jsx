@@ -47,7 +47,7 @@ const Header = () => {
 								<ul className="font-bold">
 									<li>À propos de nous</li>
 									<li>Personnel</li>
-									<li>En savoir +</li>
+									<li>En savoir+</li>
 									<li>Témoignages</li>
 								</ul>
 							</nav>
