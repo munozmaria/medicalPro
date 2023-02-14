@@ -5,9 +5,6 @@ const Temoignages = () => {
 		<div>
 			<section className="mt-20 grid place-items-center mx-auto">
 				<div class="flex flex-col items-center">
-					<h1 class="text-3xl font-bold mt-10">
-						Injection d'acide hyaluronique
-					</h1>
 					<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
 						<div class="md:flex">
 							<div class="md:flex-shrink-0">
@@ -36,9 +33,8 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<h1 class="text-3xl font-bold mt-10">Bichectomie</h1>
-					<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
-						<div class="md:flex">
+					<div class="max-w-md   mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<img
 									class="h-48 w-full object-cover md:w-48"
@@ -65,8 +61,7 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<h1 class="text-3xl font-bold mt-10">Rhinoplastie</h1>
-					<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-5 transform hover:scale-105 duration-500 ease-in-out">
+					<div class="max-w-md   mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
 						<div class="md:flex">
 							<div class="md:flex-shrink-0">
 								<img

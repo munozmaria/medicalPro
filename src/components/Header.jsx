@@ -9,6 +9,10 @@ import styles from "../styles/Home.module.css"
 const Header = () => {
 
 	const [isOpen, setIsOpen] = useState(false)
+
+	
+
+
 	return (
 		<>
 			<header className="absolute w-full bg-white shadow-lg shadow-indigo-500/40">
@@ -44,16 +48,10 @@ const Header = () => {
 
 						<nav className={isOpen && "open"}>
 							<ul className={styles.liste}>
-								<li >Nous</li>
-								<li >
-									Personnel
-								</li>
-								<li >
-									En savoir+
-								</li>
-								<li >
-									Témoignages
-								</li>
+								<li>Nous</li>
+								<li>Personnel</li>
+								<li>En savoir+</li>
+								<li>Témoignages</li>
 							</ul>
 						</nav>
 					</div>
@@ -64,8 +62,8 @@ const Header = () => {
 							</Link>
 
 							<li>
-								<button className=" text-slate-600 bg-blue-200 hover:bg-blue-600 font-bold hover:text-white py-2 px-4 rounded-full">
-									Ouvrir un compte
+								<button className={`${styles.buttonConnect} ${styles.btn3}`}>
+									<span className={styles.spanBtn}>Ouvrir un compte</span>
 								</button>
 							</li>
 						</ul>

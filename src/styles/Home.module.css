@@ -26,3 +26,87 @@ letter-spacing: .1rem;
   display:block;
   transition: .5s ease-in-out;
 }
+
+
+
+
+.buttonConnect{
+  display: inline-block;
+  position: relative;
+  border-radius:5px;
+  background: none;
+  border: none;
+  color: rgb(71 85 105); 
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px;
+  background: rgb(191 219 254);
+}
+
+.buttonConnect:hover{
+color: #1288c2;
+background-color:white;
+
+}
+.spanBtn{
+  display: block;
+  padding: 10px 10px;
+
+}
+.buttonConnect::before, .buttonConnect::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(169,213,247);
+  background: linear-gradient(90deg, rgba(169,213,247,1) 0%, rgba(196,183,241,1) 48%);
+  
+}
+
+.spanBtn::before, .spanBtn::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: rgb(169,213,247);
+  background: linear-gradient(90deg, rgba(169,213,247,1) 0%, rgba(196,183,241,1) 48%);
+
+}
+.buttonConnect:hover::before, .buttonConnect:hover::after{
+  width: 100%;
+ 
+
+}
+.buttonConnect:hover .spanBtn::before, .buttonConnect:hover .spanBtn::after{
+  height: 100%;
+  
+}
+
+.btn3::before{
+  left: 50%;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.btn3::after{
+  left: 50%;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.btn3 span::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn3 span::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.btn3:hover::before, .btn3:hover::after{
+  left: 0;
+}
+.btn3:hover span::before, .btn3:hover span::after{
+  top: 0;
+}
