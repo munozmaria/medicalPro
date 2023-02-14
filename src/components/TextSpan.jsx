@@ -28,14 +28,14 @@ const TextSpan = ({ children }) => {
 
     
 	return (
-        <motion.span
-            animate={controls}
-            onMouseOver={() => {
-                if (!isPlaying)
-                rubberBand()
-            }}
-            onAnimationComplete = {()=> setIsPlaying(false)}
-            className="text-8xl inline-block">
+		<motion.span
+			animate={controls}
+			onMouseOver={() => {
+				if (!isPlaying) rubberBand()
+			}}
+			onAnimationComplete={() => setIsPlaying(false)}
+			className="text-8xl inline-block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 drop-shadow-lg"
+		>
 			{children}
 		</motion.span>
 	)

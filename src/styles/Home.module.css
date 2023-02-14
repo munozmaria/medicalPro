@@ -1,0 +1,28 @@
+.liste li{
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: .1rem;
+--tw-text-opacity: 1;
+    color: rgb(71 85 105 / var(--tw-text-opacity));
+
+}
+
+
+
+.liste li::after{
+  content:"";
+  height: 2px;
+  width: 0;
+  background-color: #558ec6;
+  display:block;
+  transition: .5s ease-in-out;
+}
+
+.liste li:hover::after { 
+   content:"";
+  height: 2px;
+  width: 100%;
+  background-color: #558ec6;
+  display:block;
+  transition: .5s ease-in-out;
+}
