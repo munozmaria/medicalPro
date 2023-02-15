@@ -5,11 +5,11 @@ const Temoignages = () => {
 		<div>
 			<section className="mt-20 grid place-items-center mx-auto">
 				<div class="flex flex-col items-center">
-					<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-						<div class="md:flex">
+					<div class="max-w-md mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<img
-									class="h-48 w-full object-cover md:w-48"
+									class="md:h-60 w-full object-cover md:w-48"
 									src="https://static.fotor.com/app/features/img/aiface/advance/1.png"
 									alt=""
 								/>
@@ -33,11 +33,11 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<div class="max-w-md   mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+					<div class="max-w-md mx-8  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<img
-									class="h-48 w-full object-cover md:w-48"
+									class="md:h-60  w-full object-cover md:w-48"
 									src="https://1.img-dpreview.com/files/p/TS560x560~forums/63132016/2a1e59e12f4543bea10f2385259c81cf"
 									alt=""
 								/>
@@ -61,11 +61,11 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<div class="max-w-md   mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+					<div class="max-w-md  mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
 						<div class="md:flex">
 							<div class="md:flex-shrink-0">
 								<img
-									class="h-48 w-full object-cover md:w-48"
+									class="md:h-60 w-full object-cover  md:w-48"
 									src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=2000"
 									alt="Man looking at item at a store"
 								/>

@@ -3,7 +3,7 @@ import { GrClose } from "react-icons/gr"
 import { AiOutlineMenu } from "react-icons/ai"
 import Link from "next/link"
 import Image from "next/image"
-import logo from "../images/logo-medicalProject.jpg"
+import logo from "../images/MedicalBeauty.svg"
 import styles from "../styles/Home.module.css"
 
 const Header = () => {
@@ -15,13 +15,13 @@ const Header = () => {
 
 	return (
 		<>
-			<header className="absolute w-full bg-white shadow-lg shadow-indigo-500/40">
-				<div className=" flex items-center justify-between px-8 py-2 max-w-6xl mx-auto ">
-					<div className="flex items-center justify-start gap-4  ">
-						<ul className="flex items-center justify-start gap-4 ">
+			<header className="absolute z-30 w-full top-0 bottom-0 right-0 left-0  ">
+				<div className=" flex items-center bg-transparent justify-between md:px-8 pl-6 py-8 sm:py-2 max-w-6xl mx-auto gap-8 md:gap-0 ">
+					<div className="flex items-center justify-between gap-4 sm:justify-start  ">
+						<ul className="flex items-center justify-start gap-4  ">
 							{!isOpen && (
 								<li onClick={() => setIsOpen(true)} className="lg:hidden">
-									<button className="cursor-pointer">
+									<button className="cursor-pointer text-3xl  text-white">
 										<AiOutlineMenu />
 									</button>
 								</li>
@@ -31,15 +31,15 @@ const Header = () => {
 									onClick={() => setIsOpen(false)}
 									className="lg:hidden close"
 								>
-									<button className="cursor-pointer w-6 text-4xl">
-										<GrClose className="text-4xl h-4 w-5" />
+									<button className="cursor-pointer text-2xl text-white pb-6 ">
+										<GrClose />
 									</button>
 								</li>
 							)}
 							<Link href="/">
 								<Image
 									src={logo}
-									className="w-20 imageGlobal"
+									className="w-40 imageGlobal  "
 									alt="Image Logo"
 									priority="true"
 								></Image>
@@ -56,9 +56,11 @@ const Header = () => {
 						</nav>
 					</div>
 					<div>
-						<ul className="flex items-center justify-start gap-4">
+						<ul className="flex items-center justify-start  gap-0 md:gap-4">
 							<Link href="/cart">
-								<button className=" text-slate-600">Se connecter</button>
+								<button className=" text-white font-bold hidden sm:block rounded px-4 py-[5px] hover:bg-violet-300 hover:py-3">
+									Se connecter
+								</button>
 							</Link>
 
 							<li>

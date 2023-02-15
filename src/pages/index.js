@@ -1,22 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head"
+import Image from "next/image"
 
-
-import Header from '@/components/Header'
-import Link from 'next/link'
+import Header from "@/components/Header"
+import Link from "next/link"
 import collage from "../images/front_collage.jpg"
 
-import TextSpan from '@/components/TextSpan'
-import Temoignages from '@/components/Temoignages'
-
-
-
+import TextSpan from "@/components/TextSpan"
+import Temoignages from "@/components/Temoignages"
+import movie from "/assets/movie_medical.mp4"
+import styles from "../styles/Home.module.css"
 
 
 export default function Home() {
-
-  const sentence = "Medical Pro".split("")
-  return (
+	const sentence = "Beauty Center".split("")
+	return (
 		<>
 			<Head>
 				<title>MedicalPro</title>
@@ -30,11 +27,30 @@ export default function Home() {
 				<link rel="manifest" href="/site.webmanifest" />
 			</Head>
 			<Header></Header>
-			<div className="pt-20">
-				<section className="h-full pt-40 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
-					<div className="flex  items-center max-w-6xl gap-10 mx-auto  bg-white bg-opacity-90 font-serif flex-col lg:flex-row  p-4 md:p-4 md:px-8 ">
-						<article className="px-8 pb-2">
-							<div className="w-full">
+			<section className={styles.sectionVideo}>
+				<div className={styles.videoDiv}></div>
+				<video
+					preload="auto"
+					playsInline
+					autoplay="autoplay"
+					muted
+					loop
+					className={styles.videoBg}
+				>
+					<source src={movie} type="video/mp4" />
+				</video>
+				<div class={styles.middle}>
+					<h1 className="text-4xl">Beauty art clinic</h1>
+					<button className="shadow-[0_9px_0_#e9d4f4] hover:shadow-[0_4px_0px_rgb(147,112,219)]  ease-out hover:translate-y-1 transition-all rounded">
+						Join us
+					</button>
+				</div>
+			</section>
+			<div className="h-full">
+				<section className="h-full  pt-20 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
+					<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40 font-serif flex-col lg:flex-row  md:py-8 md:px-8 ">
+						<article className="px-4 pb-2 w-80 md:w-full mx-8 md:mx-0">
+							<div className="flex md:max-w-7xl max-w-xs font-roboto">
 								{sentence.map((letter, index) => {
 									return (
 										<TextSpan key={index}>
@@ -44,26 +60,29 @@ export default function Home() {
 								})}{" "}
 							</div>
 
-							<p className="pb-5 pt-10 italic text-2xl uppercase">
+							<p className="pb-5 lg:pt-5 italic lg:text-2xl uppercase font-roboto">
 								Sans chirurgie
 							</p>
-							<p className="italic pb-10 text-sm">Le naturel révolution</p>
+							<p className="italic pb-10 text-sm font-roboto">
+								Le naturel révolution
+							</p>
 							<Link href="/makeups">
-								<button className="button button--aylen px-5 py-3 bg-blue-200  hover:bg-sky-100 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center font-semibold uppercase tracking-widest overflow-hidden">
+								<button className="button button--aylen px-5 py-3 bg-blue-200  hover:bg-sky-100 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center font-roboto font-semibold uppercase tracking-widest overflow-hidden">
 									En savoir plus
 								</button>
 							</Link>
 						</article>
 						<Image
 							height={800}
-							width={600}
+							width={400}
 							src={collage}
-							className="object-fit w-100 lg:w-96 lg:object-contain rounded-2xl opacity-90"
+							className="object-fit lg:w-96 w-80 pt-8 lg:object-contain rounded-2xl opacity-90"
 							quality={70}
 						></Image>
 					</div>
 				</section>
-				<section className="mb-20 mt-40 relative  grid place-items-center max-w-6xl mx-auto">
+
+				<section className="mb-20 mt-40 relative  grid place-items-center max-w-6xl mx-auto h-full">
 					<div className="naturel-w flex overflow-hidden  font-Shadows opacity-70 italic text-blue-200">
 						<span className="txt t1 whitespace-nowrap text-4xl ">
 							New York - Paris - Tokyo - Espagne - &nbsp;
@@ -79,7 +98,7 @@ export default function Home() {
 							New York - Paris - Tokyo - Espagne - &nbsp;
 						</span>
 					</div>
-					<h1 class="absolute font-bold tracking-widest -bottom-8 py-4 px-8 text-blue-500 text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 drop-shadow-lg">
+					<h1 class="absolute font-bold tracking-widest -bottom-8 py-4 px-8 md:text-8xl text-[43px] text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 drop-shadow-lg">
 						Témoignages
 					</h1>
 				</section>

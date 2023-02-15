@@ -11,7 +11,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				Shadows: ["Shadows Into Light"],
+				'roboto': ["Roboto", "sans-serif"],
 			},
 		},
 	},
