@@ -15,7 +15,7 @@ const Temoignages = () => {
 								/>
 							</div>
 							<div class="p-8">
-								<div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+								<div class="uppercase tracking-wide text-sm text-sky-500 font-semibold">
 									Sarah
 								</div>
 								<a
@@ -43,7 +43,7 @@ const Temoignages = () => {
 								/>
 							</div>
 							<div class="p-8">
-								<div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+								<div class="uppercase tracking-wide text-sm text-sky-500 font-semibold">
 									Wendy
 								</div>
 								<a
@@ -71,7 +71,7 @@ const Temoignages = () => {
 								/>
 							</div>
 							<div class="p-8">
-								<div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+								<div class="uppercase tracking-wide text-sm text-sky-500 font-semibold">
 									Julia
 								</div>
 								<a

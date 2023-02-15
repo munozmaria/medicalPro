@@ -29,9 +29,9 @@ const Header = () => {
 							{isOpen && (
 								<li
 									onClick={() => setIsOpen(false)}
-									className="lg:hidden close"
+									className="lg:hidden close "
 								>
-									<button className="cursor-pointer text-2xl text-white pb-6 ">
+									<button className="cursor-pointer text-3xl text-white  ">
 										<GrClose />
 									</button>
 								</li>

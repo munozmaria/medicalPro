@@ -3,7 +3,7 @@ import Image from "next/image"
 
 import Header from "@/components/Header"
 import Link from "next/link"
-import collage from "../images/front_collage.jpg"
+import collage from "../images/bg-doctor.png"
 
 import TextSpan from "@/components/TextSpan"
 import Temoignages from "@/components/Temoignages"
@@ -48,9 +48,9 @@ export default function Home() {
 			</section>
 			<div className="h-full">
 				<section className="h-full  pt-20 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
-					<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40 font-serif flex-col lg:flex-row  md:py-8 md:px-8 ">
+					<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40  flex-col lg:flex-row  md:py-8 md:px-8 ">
 						<article className="px-4 pb-2 w-80 md:w-full mx-8 md:mx-0">
-							<div className="flex md:max-w-7xl max-w-xs font-roboto">
+							<div className="flex md:max-w-7xl max-w-xs">
 								{sentence.map((letter, index) => {
 									return (
 										<TextSpan key={index}>
@@ -60,23 +60,24 @@ export default function Home() {
 								})}{" "}
 							</div>
 
-							<p className="pb-5 lg:pt-5 italic lg:text-2xl uppercase font-roboto">
+							<p className="pb-5 lg:pt-5 lg:text-2xl uppercase drop-shadow-lg text-sky-500 ">
 								Sans chirurgie
 							</p>
-							<p className="italic pb-10 text-sm font-roboto">
+							<p className="italic pb-10 text-sm drop-shadow-lg text-sky-500 ">
 								Le naturel révolution
 							</p>
+
 							<Link href="/makeups">
-								<button className="button button--aylen px-5 py-3 bg-blue-200  hover:bg-sky-100 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center font-roboto font-semibold uppercase tracking-widest overflow-hidden">
+								<button className="button button--aylen px-5 py-3 bg-blue-200  text-sky-500 hover:bg-sky-100 hover:text-white relative block focus:outline-none border-2 border-solid rounded-lg text-sm text-center  font-semibold uppercase tracking-widest overflow-hidden">
 									En savoir plus
 								</button>
 							</Link>
 						</article>
 						<Image
 							height={800}
-							width={400}
+							width={600}
 							src={collage}
-							className="object-fit lg:w-96 w-80 pt-8 lg:object-contain rounded-2xl opacity-90"
+							className="object-fit lg:w-96 w-96 pt-8 lg:object-cover rounded-2xl opacity-90"
 							quality={70}
 						></Image>
 					</div>
