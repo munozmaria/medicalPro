@@ -4,14 +4,16 @@ import movie from "/assets/movie_medical.mp4"
 import styles from "../styles/Home.module.css"
 
 
-import Header from "@/components/Header"
+
 import Link from "next/link"
 
-import Contact from "@/components/Contact"
+
 import DataSocial from "@/components/DataSocial"
 
 import Temoignages from "../components/Temoignages"
 import BlockPicture from "../components/BlockPicture"
+import Header from "../components/Header"
+import Contact from "../components/Contact"
 
 
 const Home = () => {

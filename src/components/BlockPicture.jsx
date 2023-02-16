@@ -1,8 +1,9 @@
 import React from 'react'
-import TextSpan from "@/components/TextSpan"
+
 import Link from "next/link"
 import collage from "../images/bg-doctor.png"
 import Image from 'next/image'
+import TextSpan from './TextSpan'
 
 const BlockPicture = () => {
     const sentence = "Beauty Center".split("")
