@@ -138,7 +138,7 @@ nav ul>li {
 	z-index: 999;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
 	nav {
 		position: relative;
 		left: 0;

@@ -16,8 +16,8 @@ const Header = () => {
 	return (
 		<>
 			<header className="absolute z-30 w-full top-0 bottom-0 right-0 left-0  ">
-				<div className=" flex items-center bg-transparent justify-between md:px-8 pl-6 py-8 sm:py-2 max-w-6xl mx-auto gap-8 md:gap-0 ">
-					<div className="flex items-center justify-between gap-4 sm:justify-start  ">
+				<div className=" flex items-center  bg-transparent justify-between md:px-8 pl-6 py-7 md:py-2  max-w-6xl mx-auto gap-8 md:gap-0 ">
+					<div className="flex items-center justify-between gap-8 sm:justify-start  ">
 						<ul className="flex items-center justify-start gap-4  ">
 							{!isOpen && (
 								<li onClick={() => setIsOpen(true)} className="lg:hidden">
@@ -56,14 +56,14 @@ const Header = () => {
 						</nav>
 					</div>
 					<div>
-						<ul className="flex items-center justify-start  gap-0 md:gap-4">
-							<Link href="/cart">
-								<button className=" text-white font-bold hidden sm:block rounded px-4 py-[5px] hover:bg-violet-300 hover:py-3">
+						<ul className="flex items-center justify-start gap-2">
+							<li className="hidden md:block">
+								<button className=" text-white font-bold  rounded px-4 py-[5px] hover:bg-violet-300 hover:py-3">
 									Se connecter
 								</button>
-							</Link>
+							</li>
 
-							<li>
+							<li className="hidden md:block">
 								<button className={`${styles.buttonConnect} ${styles.btn3}`}>
 									<span className={styles.spanBtn}>Ouvrir un compte</span>
 								</button>

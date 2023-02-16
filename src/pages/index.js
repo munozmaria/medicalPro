@@ -9,6 +9,7 @@ import TextSpan from "@/components/TextSpan"
 import Temoignages from "@/components/Temoignages"
 import movie from "/assets/movie_medical.mp4"
 import styles from "../styles/Home.module.css"
+import Contact from "@/components/Contact"
 
 
 export default function Home() {
@@ -47,9 +48,9 @@ export default function Home() {
 				</div>
 			</section>
 			<div className="h-full">
-				<section className="h-full  pt-20 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
-					<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40  flex-col lg:flex-row  md:py-8 md:px-8 ">
-						<article className="px-4 pb-2 w-80 md:w-full mx-8 md:mx-0">
+				<section className="h-full pt-0 xl:pt-20 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
+					<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40  flex-col lg:flex-row pb-10 md:pb-20 md:py-8 md:px-8 ">
+						<article className="px-4 pb-2 w-[360px] md:w-full mx-8 md:mx-0">
 							<div className="flex md:max-w-7xl max-w-xs">
 								{sentence.map((letter, index) => {
 									return (
@@ -83,7 +84,7 @@ export default function Home() {
 					</div>
 				</section>
 
-				<section className="mb-20 mt-40 relative  grid place-items-center max-w-6xl mx-auto h-full">
+				<section className="mb-20 mt-20 md:mt-40 relative  grid place-items-center max-w-6xl mx-auto h-full">
 					<div className="naturel-w flex overflow-hidden  font-Shadows opacity-70 italic text-blue-200">
 						<span className="txt t1 whitespace-nowrap text-4xl ">
 							New York - Paris - Tokyo - Espagne - &nbsp;
@@ -105,6 +106,9 @@ export default function Home() {
 				</section>
 				<Temoignages></Temoignages>
 			</div>
+			<section>
+				<Contact></Contact>
+			</section>
 		</>
 	)
 }

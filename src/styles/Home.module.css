@@ -112,13 +112,7 @@ background-color:transparent;
   top: 0;
 }
 
-@media only screen and (max-width: 645px){
-.buttonConnect{
- display:none;
-  
- 
-}
-}
+
 
 .sectionVideo{
 
@@ -146,7 +140,7 @@ background-color:transparent;
       
 }
 .videoDiv{
-    background: linear-gradient(223.15deg,rgb(127 128 184 / 55%) 37.31%,rgb(198 184 247) 95.75%);
+    background: linear-gradient(349deg,rgb(194 195 245 / 55%) 37.31%,rgb(156 186 224) 95.75%);
     bottom: 0;
     left: 0;
     position: absolute;
@@ -163,4 +157,5 @@ background-color:transparent;
   font-size: 20px;
   
 }
+
 

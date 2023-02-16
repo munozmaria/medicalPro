@@ -3,7 +3,7 @@ import React from 'react'
 const Temoignages = () => {
   return (
 		<div>
-			<section className="mt-20 grid place-items-center mx-auto">
+			<section className="mt-10 grid place-items-center mx-auto">
 				<div class="flex flex-col items-center">
 					<div class="max-w-md mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
 						<div class="md:flex ">

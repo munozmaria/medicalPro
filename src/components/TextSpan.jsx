@@ -34,7 +34,7 @@ const TextSpan = ({ children }) => {
 				if (!isPlaying) rubberBand()
 			}}
 			onAnimationComplete={() => setIsPlaying(false)}
-			className="md:text-8xl font-bold md:font-normal text-[36px] inline-block py-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 drop-shadow-lg"
+			className="md:text-8xl font-bold md:font-normal text-[45px] inline-block py-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200 drop-shadow-lg"
 		>
 			{children}
 		</motion.span>
