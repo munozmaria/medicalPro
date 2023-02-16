@@ -89,7 +89,7 @@ const Contact = () => {
 									class="appearance-none block w-full bg-transparent text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 								></textarea>
 							</div>
-							<div class="flex justify-between w-full px-3 py-4">
+							<div class="flex justify-between w-full px-3 py-4 gap-4 sm:gap-0">
 								<div class="md:flex md:items-center">
 									<label class="block text-gray-500 font-bold">
 										<input class="mr-2 leading-tight" type="checkbox" />
@@ -97,7 +97,7 @@ const Contact = () => {
 									</label>
 								</div>
 								<button
-									data-aos="fade-left"
+									data-aos="zoom-out"
 									data-aos-delay="50"
 									class="shadow bg-blue-300 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
 									type="submit"
