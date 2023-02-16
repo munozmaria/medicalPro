@@ -14,7 +14,7 @@ import Temoignages from "../components/Temoignages"
 import BlockPicture from "../components/BlockPicture"
 
 
-export default function Home() {
+const Home = () => {
 
 
 	
@@ -99,3 +99,4 @@ export default function Home() {
 		</>
 	)
 }
+export default Home
