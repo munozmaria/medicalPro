@@ -8,7 +8,7 @@ const BlockPicture = () => {
     const sentence = "Beauty Center".split("")
   return (
 		<div>
-			<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40  flex-col lg:flex-row pb-10 md:pb-20 md:py-8 md:px-8 ">
+			<div className="flex place-items-center gap-3 px-6  max-w-7xl pt-6 mx-auto  bg-white bg-opacity-40  flex-col lg:flex-row pb-40 md:pb-20 md:py-8 md:px-8 ">
 				<article className="px-4 pb-2 w-[360px] md:w-full mx-8 md:mx-0">
 					<div
 						data-aos="fade-right"
