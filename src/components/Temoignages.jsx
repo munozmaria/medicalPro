@@ -1,11 +1,17 @@
 import React from 'react'
 
 const Temoignages = () => {
+
+	
   return (
-		<div>
+		<div className="overflow-hidden h-full pb-0 md:pb-40">
 			<section className="mt-10 grid place-items-center mx-auto">
 				<div class="flex flex-col items-center">
-					<div class="max-w-md mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+					<div
+						data-aos="slide-up"
+						data-aos-delay="90"
+						class="max-w-md mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out"
+					>
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<img
@@ -33,7 +39,11 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<div class="max-w-md mx-8  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+					<div
+						data-aos="slide-up"
+						data-aos-delay="50"
+						class="max-w-md mx-8  bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out"
+					>
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<img
@@ -61,7 +71,11 @@ const Temoignages = () => {
 						</div>
 					</div>
 
-					<div class="max-w-md  mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out">
+					<div
+						data-aos="slide-up"
+						data-aos-delay="30"
+						class="max-w-md  mx-8 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-8 duration-500 ease-in-out"
+					>
 						<div class="md:flex">
 							<div class="md:flex-shrink-0">
 								<img
