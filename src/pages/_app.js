@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
-import "@/styles/globals.css"
-import "@/styles/Home.module.css"
+import "../styles/globals.css"
+import "../styles/Home.module.css"
 import Aos from "aos"
 import "aos/dist/aos.css"
 

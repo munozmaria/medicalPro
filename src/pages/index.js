@@ -8,12 +8,13 @@ import styles from "../styles/Home.module.css"
 import Link from "next/link"
 
 
-import DataSocial from "@/components/DataSocial"
+
 
 import Temoignages from "../components/Temoignages"
 import BlockPicture from "../components/BlockPicture"
 import Header from "../components/Header"
 import Contact from "../components/Contact"
+import DataSocial from "../components/DataSocial"
 
 
 const Home = () => {
