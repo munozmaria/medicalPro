@@ -126,6 +126,7 @@ background-color:transparent;
   justify-content: center;
       box-shadow: 0 15px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     --tw-shadow-color: #c7b8f2;
+  
 }
 
 .videoBg{
@@ -135,8 +136,9 @@ background-color:transparent;
   left: 0;
   height: 100%;
   width: 100%;
-      right: 0;
-          bottom: 0;
+  right: 0;
+  bottom: 0;
+
       
 }
 .videoDiv{
@@ -147,7 +149,7 @@ background-color:transparent;
     right: 0;
     top: 0;
     z-index: 1;
-  
+ 
 }
 
 .middle{
