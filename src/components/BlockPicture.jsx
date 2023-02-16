@@ -1,5 +1,4 @@
 import React from 'react'
-
 import Link from "next/link"
 import collage from "../images/bg-doctor.png"
 import Image from 'next/image'
