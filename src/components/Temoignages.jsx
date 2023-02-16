@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import sara from "../images/pic1.webp"
+import wendy from "../images/pic2.jpg"
+import julia from "../images/pic3.jpg"
 
 const Temoignages = () => {
 
@@ -14,9 +18,11 @@ const Temoignages = () => {
 					>
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
-								<img
+								<Image
+									width={400}
+									height={500}
 									class="md:h-60 w-full object-cover md:w-48"
-									src="https://static.fotor.com/app/features/img/aiface/advance/1.png"
+									src={sara}
 									alt=""
 								/>
 							</div>
@@ -46,9 +52,11 @@ const Temoignages = () => {
 					>
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
-								<img
+								<Image
+									width={400}
+									height={500}
 									class="md:h-60  w-full object-cover md:w-48"
-									src="https://1.img-dpreview.com/files/p/TS560x560~forums/63132016/2a1e59e12f4543bea10f2385259c81cf"
+									src={wendy}
 									alt=""
 								/>
 							</div>
@@ -78,9 +86,11 @@ const Temoignages = () => {
 					>
 						<div class="md:flex">
 							<div class="md:flex-shrink-0">
-								<img
+								<Image
+									width={400}
+									height={500}
 									class="md:h-60 w-full object-cover  md:w-48"
-									src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=2000"
+									src={julia}
 									alt="Man looking at item at a store"
 								/>
 							</div>
