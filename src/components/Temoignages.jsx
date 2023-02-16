@@ -19,11 +19,11 @@ const Temoignages = () => {
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<Image
+									alt="model sara"
 									width={400}
 									height={500}
 									class="md:h-60 w-full object-cover md:w-48"
 									src={sara}
-									alt=""
 								/>
 							</div>
 							<div class="p-8">
@@ -53,11 +53,11 @@ const Temoignages = () => {
 						<div class="md:flex ">
 							<div class="md:flex-shrink-0">
 								<Image
+									alt="model wendy"
 									width={400}
 									height={500}
 									class="md:h-60  w-full object-cover md:w-48"
 									src={wendy}
-									alt=""
 								/>
 							</div>
 							<div class="p-8">
@@ -91,7 +91,7 @@ const Temoignages = () => {
 									height={500}
 									class="md:h-60 w-full object-cover  md:w-48"
 									src={julia}
-									alt="Man looking at item at a store"
+									alt="model julia"
 								/>
 							</div>
 							<div class="p-8">

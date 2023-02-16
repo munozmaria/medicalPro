@@ -46,7 +46,7 @@ const BlockPicture = () => {
 					</Link>
 				</article>
 				<Image
-					
+					alt="doctor"
 					height={800}
 					width={600}
 					src={collage}
