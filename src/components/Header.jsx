@@ -17,7 +17,7 @@ const Header = () => {
 		<>
 			<header className="absolute z-30 w-full top-0 bottom-0 right-0 left-0  ">
 				<div className=" flex items-center  bg-transparent justify-between md:px-8 pl-6 py-7 md:py-2  max-w-6xl mx-auto gap-8 md:gap-0 ">
-					<div className="flex items-center justify-between gap-8 sm:justify-start  ">
+					<div className="flex items-center justify-between gap-8 sm:justify-start   ">
 						<ul className="flex items-center justify-start gap-4  ">
 							{!isOpen && (
 								<li onClick={() => setIsOpen(true)} className="lg:hidden">
@@ -31,7 +31,7 @@ const Header = () => {
 									onClick={() => setIsOpen(false)}
 									className="lg:hidden close "
 								>
-									<button className="cursor-pointer text-3xl text-white  ">
+									<button className="cursor-pointer text-1xl bg-white rounded px-2 py-2 ">
 										<GrClose />
 									</button>
 								</li>
