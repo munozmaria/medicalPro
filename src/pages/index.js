@@ -1,18 +1,17 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Head from "next/head"
+import movie from "/assets/movie_medical.mp4"
+import styles from "../styles/Home.module.css"
 
 
 import Header from "@/components/Header"
 import Link from "next/link"
 
-
-
-import Temoignages from "@/components/Temoignages"
-import movie from "/assets/movie_medical.mp4"
-import styles from "../styles/Home.module.css"
 import Contact from "@/components/Contact"
 import DataSocial from "@/components/DataSocial"
-import BlockPiture from "@/components/BlockPicture"
+
+import Temoignages from "../components/Temoignages"
+import BlockPicture from "../components/BlockPicture"
 
 
 export default function Home() {
@@ -58,7 +57,7 @@ export default function Home() {
 			</section>
 		
 				<section className="h-full overflow-hidden pt-0 xl:pt-20 min-h-screen bg-[url('../images/clinic.jpg')] bg-no-repeat bg-cover bg-center bg-opacity-50">
-				<BlockPiture></BlockPiture>
+				<BlockPicture></BlockPicture>
 				</section>
 
 				<section className=" mb-0 md:mb-10 overflow-hidden mt-20 md:mt-40 relative  grid place-items-center max-w-6xl mx-auto h-full">
