@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { GrClose } from "react-icons/gr"
 import { AiOutlineMenu } from "react-icons/ai"
 import Link from "next/link"
@@ -10,6 +10,22 @@ const Header = () => {
 
 	const [isOpen, setIsOpen] = useState(false)
 
+	let menuRef = useRef()
+	
+	useEffect(() => { 
+		let handler = (e) => {
+			if (!menuRef.current.contains(e.target)) {
+				setIsOpen(false)
+				console.log(menuRef.current)
+				
+			}
+		}
+		document.addEventListener('mousedown', handler)
+
+		return () => {
+			document.removeEventListener("mousedown", handler)
+		}
+	})
 	
 
 
@@ -17,7 +33,7 @@ const Header = () => {
 		<>
 			<header className="absolute z-30 w-full top-0 bottom-0 right-0 left-0  ">
 				<div className=" flex items-center  bg-transparent justify-between md:px-8 pl-6 py-7 md:py-2  max-w-6xl mx-auto gap-8 md:gap-0 ">
-					<div className="flex items-center justify-between gap-8 sm:justify-start   ">
+					<div ref={menuRef} className="flex items-center justify-between gap-8 sm:justify-start   ">
 						<ul className="flex items-center justify-start gap-4  ">
 							{!isOpen && (
 								<li onClick={() => setIsOpen(true)} className="lg:hidden">

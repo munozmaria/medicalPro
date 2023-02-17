@@ -3,13 +3,6 @@ import Head from "next/head"
 import movie from "/assets/movie_medical.mp4"
 import styles from "../styles/Home.module.css"
 
-
-
-import Link from "next/link"
-
-
-
-
 import Temoignages from "../components/Temoignages"
 import BlockPicture from "../components/BlockPicture"
 import Header from "../components/Header"
@@ -19,8 +12,6 @@ import DataSocial from "../components/DataSocial"
 
 const Home = () => {
 
-
-	
 	return (
 		<>
 			<Head>
@@ -34,7 +25,7 @@ const Home = () => {
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</Head>
-			<Header></Header>
+			<Header ></Header>
 			<section className={styles.sectionVideo}>
 				<div className={styles.videoDiv}></div>
 				<video
@@ -51,11 +42,11 @@ const Home = () => {
 					<h1 className="text-4xl" data-aos="fade-down" data-aos-delay="100">
 						Beauty art clinic
 					</h1>
-					
+
 					<button
 						data-aos="fade-up"
 						data-aos-delay="50"
-						 className="shadow-[0_9px_0_#e9d4f4] hover:shadow-[0_4px_0px_rgb(147,112,219)]  ease-out hover:translate-y-1 transition-all rounded"
+						className="shadow-[0_9px_0_#e9d4f4] hover:shadow-[0_4px_0px_rgb(147,112,219)]  ease-out hover:translate-y-1 transition-all rounded"
 					>
 						Paris
 					</button>
